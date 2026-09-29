@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" width="880" height="240">
+  <defs>
+    <linearGradient id="logoCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A14" />
+      <stop offset="45%" stop-color="#0E1224" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+
+    <linearGradient id="logoBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <linearGradient id="pGradLogo" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="25%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="75%" stop-color="#A855F7" />
+      <stop offset="90%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="badgeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="880" height="240" rx="28" fill="url(#logoCanvasBg)" stroke="url(#logoBorder)" stroke-width="1.6" />
+
+  <!-- Left Icon Emblem (Embedded 180x180 scaled viewBox) -->
+  <g transform="translate(45, 30) scale(0.35)" filter="url(#logoShadow)">
+    <!-- Squircle -->
+    <rect width="512" height="512" rx="122" fill="#0C101E" stroke="url(#badgeBorder)" stroke-width="4.5" />
+    <circle cx="265" cy="205" r="145" fill="#38BDF8" opacity="0.18" />
+
+    <!-- Wave Arcs -->
+    <path d="M 404 150 A 85 85 0 0 1 404 260" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+    <path d="M 430 128 A 120 120 0 0 1 430 282" fill="none" stroke="#818CF8" stroke-width="8" stroke-linecap="round" opacity="0.55" stroke-dasharray="16 20" />
+
+    <!-- P Glyph -->
+    <path fill-rule="evenodd"
+          d="
+            M 140 152 A 34 34 0 0 1 174 118 H 282 C 346 118 392 156 392 205 C 392 254 346 292 282 292 H 220 A 16 16 0 0 0 204 308 V 378 A 32 32 0 0 1 140 378 Z
+            M 218 174 H 276 C 308 174 332 188 332 205 C 332 222 308 236 276 236 H 218 A 12 12 0 0 1 206 224 V 186 A 12 12 0 0 1 218 174 Z
+          "
+          fill="url(#pGradLogo)"
+          stroke="#FFFFFF"
+          stroke-width="3"
+          stroke-opacity="0.6" />
+
+    <!-- Spark Nexus -->
+    <g transform="translate(262, 205)">
+      <path d="M 0 -34 Q 0 0 34 0 Q 0 0 0 34 Q 0 0 -34 0 Q 0 0 0 -34 Z" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="8" fill="#38BDF8" />
+    </g>
+  </g>
+
+  <!-- Typography: PERSONA -->
+  <g transform="translate(265, 102)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif"
+          font-size="62"
+          font-weight="900"
+          letter-spacing="5"
+          fill="url(#textGrad)">PERSONA</text>
+  </g>
+
+  <!-- AI Pill Badge -->
+  <g transform="translate(630, 58)">
+    <rect width="66" height="40" rx="12" fill="url(#badgeBg)" stroke="url(#badgeBorder)" stroke-width="1.8" />
+    <text x="33" y="26"
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+          font-size="18"
+          font-weight="800"
+          letter-spacing="2"
+          fill="#38BDF8"
+          text-anchor="middle">AI</text>
+  </g>
+
+  <!-- Subtitle: PERSONAL AI REPRESENTATIVE -->
+  <g transform="translate(267, 142)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif"
+          font-size="15"
+          font-weight="600"
+          letter-spacing="3.8"
+          fill="#94A3B8">PERSONAL AI REPRESENTATIVE</text>
+  </g>
+
+  <!-- Feature Chips Bar -->
+  <g transform="translate(267, 168)">
+    <!-- Pill 1: Policy Governed -->
+    <rect x="0" y="0" width="136" height="24" rx="12" fill="#1E293B" opacity="0.65" stroke="#334155" stroke-width="1" />
+    <circle cx="12" cy="12" r="3.5" fill="#38BDF8" />
+    <text x="74" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">POLICY GOVERNED</text>
+
+    <!-- Pill 2: Voice & STT/TTS -->
+    <rect x="144" y="0" width="120" height="24" rx="12" fill="#1E293B" opacity="0.65" stroke="#334155" stroke-width="1" />
+    <circle cx="156" cy="12" r="3.5" fill="#A855F7" />
+    <text x="210" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">VOICE &amp; CHAT</text>
+
+    <!-- Pill 3: Autonomous -->
+    <rect x="272" y="0" width="134" height="24" rx="12" fill="#1E293B" opacity="0.65" stroke="#334155" stroke-width="1" />
+    <circle cx="284" cy="12" r="3.5" fill="#10B981" />
+    <text x="345" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">L0-L4 AUTONOMY</text>
+
+    <!-- Pill 4: Safety Shield -->
+    <rect x="414" y="0" width="130" height="24" rx="12" fill="#1E293B" opacity="0.65" stroke="#334155" stroke-width="1" />
+    <circle cx="426" cy="12" r="3.5" fill="#F59E0B" />
+    <text x="485" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">SECURITY SHIELD</text>
+  </g>
+</svg>

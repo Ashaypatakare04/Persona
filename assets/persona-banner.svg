@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060911" />
+      <stop offset="45%" stop-color="#0B0F20" />
+      <stop offset="75%" stop-color="#120D2C" />
+      <stop offset="100%" stop-color="#070A14" />
+    </linearGradient>
+
+    <radialGradient id="bannerAura" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#06B6D4" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="bannerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="heroText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <linearGradient id="heroGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="30%" stop-color="#8B5CF6" />
+      <stop offset="70%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <filter id="heroGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect width="1280" height="420" rx="24" fill="url(#bannerBg)" />
+  <rect width="1280" height="420" rx="24" fill="url(#bannerAura)" />
+  <rect width="1276" height="416" x="2" y="2" rx="22" fill="none" stroke="url(#bannerBorder)" stroke-width="1.8" />
+
+  <!-- Constellation / Circuit Background Detail -->
+  <g opacity="0.18" stroke="#818CF8" stroke-width="1.2" fill="none">
+    <circle cx="1120" cy="90" r="140" stroke-dasharray="6 10" />
+    <circle cx="1120" cy="90" r="220" stroke-dasharray="4 12" />
+    <circle cx="1120" cy="90" r="4" fill="#38BDF8" />
+    <circle cx="1200" cy="180" r="3" fill="#A855F7" />
+    <line x1="1120" y1="90" x2="1200" y2="180" />
+    <circle cx="1030" cy="140" r="3" fill="#38BDF8" />
+    <line x1="1120" y1="90" x2="1030" y2="140" />
+  </g>
+
+  <!-- Left Emblem (260x260) -->
+  <g transform="translate(100, 78) scale(0.51)">
+    <!-- Squircle -->
+    <rect width="512" height="512" rx="122" fill="#0C101E" stroke="url(#heroGradient)" stroke-width="5" />
+    <circle cx="265" cy="205" r="145" fill="#38BDF8" opacity="0.22" />
+
+    <!-- Wave Arcs -->
+    <path d="M 404 150 A 85 85 0 0 1 404 260" fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" opacity="0.85" />
+    <path d="M 430 128 A 120 120 0 0 1 430 282" fill="none" stroke="#818CF8" stroke-width="9" stroke-linecap="round" opacity="0.55" stroke-dasharray="16 20" />
+
+    <!-- P Glyph -->
+    <path fill-rule="evenodd"
+          d="
+            M 140 152 A 34 34 0 0 1 174 118 H 282 C 346 118 392 156 392 205 C 392 254 346 292 282 292 H 220 A 16 16 0 0 0 204 308 V 378 A 32 32 0 0 1 140 378 Z
+            M 218 174 H 276 C 308 174 332 188 332 205 C 332 222 308 236 276 236 H 218 A 12 12 0 0 1 206 224 V 186 A 12 12 0 0 1 218 174 Z
+          "
+          fill="url(#heroGradient)"
+          stroke="#FFFFFF"
+          stroke-width="3"
+          stroke-opacity="0.6" />
+
+    <!-- Nexus Core -->
+    <g transform="translate(262, 205)">
+      <path d="M 0 -42 Q 0 0 42 0 Q 0 0 0 42 Q 0 0 -42 0 Q 0 0 0 -42 Z" fill="#FFFFFF" filter="url(#heroGlow)" />
+      <circle cx="0" cy="0" r="11" fill="#38BDF8" />
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(420, 165)">
+    <!-- Title -->
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif"
+          font-size="82"
+          font-weight="900"
+          letter-spacing="6"
+          fill="url(#heroText)">PERSONA</text>
+
+    <!-- AI Pill Badge -->
+    <g transform="translate(480, -60)">
+      <rect width="84" height="48" rx="14" fill="#17143A" stroke="#818CF8" stroke-width="2" />
+      <text x="42" y="31"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            font-size="22"
+            font-weight="800"
+            letter-spacing="2"
+            fill="#38BDF8"
+            text-anchor="middle">AI</text>
+    </g>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(422, 215)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif"
+          font-size="21"
+          font-weight="600"
+          letter-spacing="4.5"
+          fill="#94A3B8">AUTONOMOUS PERSONAL AI REPRESENTATIVE</text>
+  </g>
+
+  <!-- Tagline Paragraph -->
+  <g transform="translate(422, 252)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+          font-size="15"
+          font-weight="400"
+          fill="#64748B">Policy-governed intelligence acting on your behalf across calls, SMS, email, and live chat.</text>
+  </g>
+
+  <!-- Feature Pills -->
+  <g transform="translate(422, 290)">
+    <g transform="translate(0, 0)">
+      <rect width="170" height="32" rx="16" fill="#1E293B" opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="16" cy="16" r="4.5" fill="#38BDF8" />
+      <text x="96" y="20.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="middle">MULTI-STAGE SAFETY</text>
+    </g>
+
+    <g transform="translate(182, 0)">
+      <rect width="186" height="32" rx="16" fill="#1E293B" opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="16" cy="16" r="4.5" fill="#A855F7" />
+      <text x="104" y="20.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="middle">VOICE STT/TTS ENGINE</text>
+    </g>
+
+    <g transform="translate(380, 0)">
+      <rect width="180" height="32" rx="16" fill="#1E293B" opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="16" cy="16" r="4.5" fill="#10B981" />
+      <text x="101" y="20.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="middle">DYNAMIC AUTONOMY</text>
+    </g>
+
+    <g transform="translate(572, 0)">
+      <rect width="176" height="32" rx="16" fill="#1E293B" opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="16" cy="16" r="4.5" fill="#F59E0B" />
+      <text x="99" y="20.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="middle">POLICY &amp; RISK ENGINE</text>
+    </g>
+  </g>
+</svg>

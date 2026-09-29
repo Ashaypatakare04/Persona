@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="assets/persona-banner.png" alt="Persona — Personal AI Representative" width="100%" />
+</p>
+
+<p align="center">
+  <a href="#core-architecture--capabilities"><img src="https://img.shields.io/badge/Autonomy-L0--L4%20Configurable-8B5CF6?style=for-the-badge" alt="Autonomy" /></a>
+  <a href="#step-1-run-the-backend-fastapi"><img src="https://img.shields.io/badge/Backend-FastAPI%20%7C%20Python-06B6D4?style=for-the-badge" alt="Backend" /></a>
+  <a href="#step-2-run-the-frontend-react--vite--tailwind"><img src="https://img.shields.io/badge/Frontend-React%20%7C%20Tailwind-3B82F6?style=for-the-badge" alt="Frontend" /></a>
+  <a href="#step-3-run-automated-tests"><img src="https://img.shields.io/badge/Tests-24%20Passing-10B981?style=for-the-badge" alt="Tests" /></a>
+</p>
+
+---
+
 # Persona — Personal AI Representative
 
 Persona is an autonomous, policy-governed personal AI representative built to communicate and perform actions on behalf of **Ashay** across phone calls, text messages, email, and live chat.

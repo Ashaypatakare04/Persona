@@ -9,8 +9,8 @@ import {
   Sliders,
   ShieldAlert,
   Sparkles,
-  Bot
 } from 'lucide-react';
+import { PersonaLogo } from './PersonaLogo';
 
 interface SidebarProps {
   currentTab: string;
@@ -55,20 +55,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside className="w-64 bg-slate-900/90 border-r border-slate-800 flex flex-col h-screen select-none">
       {/* Brand Header */}
       <div className="p-5 border-b border-slate-800/80 flex items-center justify-between">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 via-indigo-600 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-900/30">
-            <Bot className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h1 className="font-bold text-lg text-white tracking-tight flex items-center gap-1.5">
-              Persona
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 font-mono border border-purple-500/30">
-                AI
-              </span>
-            </h1>
-            <p className="text-xs text-slate-400">Representative for Ashay</p>
-          </div>
-        </div>
+        <PersonaLogo
+          size={42}
+          showText={true}
+          showBadge={true}
+          subtitle="Representative for Ashay"
+        />
       </div>
 
       {/* Autonomy Status Badge */}
