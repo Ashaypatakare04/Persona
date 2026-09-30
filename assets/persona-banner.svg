@@ -1,84 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420">
   <defs>
-    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060911" />
-      <stop offset="45%" stop-color="#0B0F20" />
-      <stop offset="75%" stop-color="#120D2C" />
-      <stop offset="100%" stop-color="#070A14" />
+    <linearGradient id="bannerBgMaster" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#0A0E1A" />
+      <stop offset="100%" stop-color="#020617" />
     </linearGradient>
 
-    <radialGradient id="bannerAura" cx="30%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.32" />
-      <stop offset="60%" stop-color="#06B6D4" stop-opacity="0.14" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-
-    <linearGradient id="bannerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.6" />
+    <linearGradient id="bannerBorderMaster" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.4" />
     </linearGradient>
 
-    <linearGradient id="heroText" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="heroTextMaster" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="70%" stop-color="#F8FAFC" />
       <stop offset="100%" stop-color="#E2E8F0" />
     </linearGradient>
 
-    <linearGradient id="shieldLeftBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="torsoBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#3730A3" />
+    </linearGradient>
+
+    <linearGradient id="headBanner" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#818CF8" />
-      <stop offset="40%" stop-color="#6366F1" />
-      <stop offset="100%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#6366F1" />
     </linearGradient>
 
-    <linearGradient id="shieldRightBanner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C084FC" />
-      <stop offset="40%" stop-color="#A855F7" />
-      <stop offset="80%" stop-color="#06B6D4" />
-      <stop offset="100%" stop-color="#38BDF8" />
+    <linearGradient id="waveBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#06B6D4" />
     </linearGradient>
 
-    <filter id="heroGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="heroShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.5" />
     </filter>
   </defs>
 
-  <rect width="1280" height="420" rx="24" fill="url(#bannerBg)" />
-  <rect width="1280" height="420" rx="24" fill="url(#bannerAura)" />
-  <rect width="1276" height="416" x="2" y="2" rx="22" fill="none" stroke="url(#bannerBorder)" stroke-width="1.8" />
-
-  <!-- Constellation Circuit Detail -->
-  <g opacity="0.18" stroke="#818CF8" stroke-width="1.2" fill="none">
-    <circle cx="1120" cy="90" r="140" stroke-dasharray="6 10" />
-    <circle cx="1120" cy="90" r="220" stroke-dasharray="4 12" />
-    <circle cx="1120" cy="90" r="4" fill="#38BDF8" />
-    <circle cx="1200" cy="180" r="3" fill="#A855F7" />
-    <line x1="1120" y1="90" x2="1200" y2="180" />
-    <circle cx="1030" cy="140" r="3" fill="#38BDF8" />
-    <line x1="1120" y1="90" x2="1030" y2="140" />
-  </g>
+  <rect width="1280" height="420" rx="24" fill="url(#bannerBgMaster)" />
+  <rect width="1276" height="416" x="2" y="2" rx="22" fill="none" stroke="url(#bannerBorderMaster)" stroke-width="1.8" />
 
   <!-- Left Emblem (260x260) -->
-  <g transform="translate(100, 78) scale(0.51)">
-    <rect width="512" height="512" rx="122" fill="#0C101E" stroke="url(#bannerBorder)" stroke-width="5" />
-    <circle cx="256" cy="250" r="150" fill="#38BDF8" opacity="0.22" />
-
-    <!-- Wave Arcs -->
-    <path d="M 408 175 A 95 95 0 0 1 408 325" fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" opacity="0.85" />
-    <path d="M 104 175 A 95 95 0 0 0 104 325" fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" opacity="0.85" />
-
-    <!-- Shield Facets -->
-    <path d="M 256 94 L 140 160 C 134 246 160 340 256 414 L 256 94 Z" fill="url(#shieldLeftBanner)" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6" />
-    <path d="M 256 94 L 372 160 C 378 246 352 340 256 414 L 256 94 Z" fill="url(#shieldRightBanner)" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6" />
-
-    <!-- Inner Core Cutout -->
-    <polygon points="256,156 332,250 256,344 180,250" fill="#080C18" stroke="#38BDF8" stroke-width="4" />
-
-    <!-- Nexus Core -->
-    <g transform="translate(256, 250)">
-      <path d="M 0 -42 Q 0 0 42 0 Q 0 0 0 42 Q 0 0 -42 0 Q 0 0 0 -42 Z" fill="#FFFFFF" filter="url(#heroGlow)" />
-      <circle cx="0" cy="0" r="11" fill="#38BDF8" />
+  <g transform="translate(100, 78) scale(0.51)" filter="url(#heroShadow)">
+    <rect width="512" height="512" rx="120" fill="#090D16" stroke="#334155" stroke-width="4" />
+    <g transform="translate(220, 256)">
+      <path d="M -115 135 C -115 35 -65 0 0 0 C 65 0 115 35 115 135 C 115 144 108 152 98 152 H -98 C -108 152 -115 144 -115 135 Z" fill="url(#torsoBanner)" />
+      <circle cx="0" cy="-68" r="48" fill="url(#headBanner)" />
+      <circle cx="0" cy="56" r="14" fill="#FFFFFF" />
+      <g fill="none" stroke="url(#waveBanner)" stroke-linecap="round">
+        <path d="M 88 -90 C 114 -72 114 -32 88 -14" stroke-width="14" />
+        <path d="M 124 -112 C 160 -86 160 -18 124 8" stroke-width="14" />
+        <path d="M 160 -134 C 206 -100 206 -4 160 30" stroke-width="12" opacity="0.65" />
+      </g>
     </g>
   </g>
 
@@ -88,19 +63,7 @@
           font-size="82"
           font-weight="900"
           letter-spacing="6"
-          fill="url(#heroText)">PERSONA</text>
-
-    <!-- AI Pill Badge -->
-    <g transform="translate(480, -60)">
-      <rect width="84" height="48" rx="14" fill="#17143A" stroke="#818CF8" stroke-width="2" />
-      <text x="42" y="31"
-            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-            font-size="22"
-            font-weight="800"
-            letter-spacing="2"
-            fill="#38BDF8"
-            text-anchor="middle">AI</text>
-    </g>
+          fill="url(#heroTextMaster)">PERSONA</text>
   </g>
 
   <!-- Subtitle -->
